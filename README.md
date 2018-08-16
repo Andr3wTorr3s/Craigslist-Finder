@@ -9,6 +9,7 @@ you can pip install from this github page or download the crcrawler.py file dire
 ### Prerequisites
 
 Python 3
+
 Beautifulsoup
 
 ```
@@ -16,15 +17,35 @@ https://www.python.org/downloads/
 pip install bs4
 ```
 
+to use with twilio check out the twilio documentation on how to send yourself texts with python
+
+'''
+https://www.twilio.com/docs/sms/quickstart/python
+'''
 
 
 
 ### Methods
 
 
+
 ```
 crcrawler.getposts(URL)
 ```
+
+Parameters: url link of craigslist search (string)
+
+Returns: list of strings (Urls of craigslist posts of given search)
+
+
+```
+crcrawler.getinfo(URL)
+```
+
+Parameters: url link of craigslist post(string)
+
+Returns:(string) information about post in the form (price,title,description)
+
 
 ## Deployment
 
