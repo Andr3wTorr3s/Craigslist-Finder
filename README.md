@@ -88,6 +88,9 @@ while True:
        time.sleep(1800)  #let the program sleep for 30 minutes so 30 minutes later it can check for new posts.  
 ```
 
+*editors notes on Example 2:
+**For the link that is pagesearch, Use as many filters as you can. To broad of a search can blow up your phone especially while looking for cars.  Car dealerships use lots of keywords to make their "advertisments" pop up in many different search filters.
+
 
 
 ## Built With
