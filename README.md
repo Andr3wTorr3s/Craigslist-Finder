@@ -51,7 +51,7 @@ Returns:(string) information about post in the form (price,title,description)
 
 Example1: printing information from craigslist search posts
 
-'''
+```
 import clcrawler as cc
 
 searchpage="https//..." #whatever craigslist page you're interested in
@@ -62,7 +62,7 @@ for post in posts:
        print(cc.getinfo(post))
 
 #this prints the price,title and description of each post on that page
-'''
+```
 
 
 ## Built With
