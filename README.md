@@ -51,7 +51,9 @@ Returns:(string) information about post in the form (price,title,description)
 
 Example 1: printing information from craigslist search posts
 
-```
+-----------
+
+```python
 import clcrawler as cc
 
 searchpage="https//craigslist....."       #whatever craigslist page you're interested in
@@ -63,9 +65,13 @@ for post in posts:
 
 #this prints the price,title and description of each post on that page
 ```
+-----------
+
 
 Example 2: sending updates to a phone (with twilio)
-```
+-----------
+
+```python
 import clcrawler as cc
 import time
 
@@ -87,6 +93,8 @@ while True:
        
        time.sleep(1800)  #let the program sleep for 30 minutes so 30 minutes later it can check for new posts.  
 ```
+
+-----------
 
 *editors notes on Example 2:
  For the link that is pagesearch, Use as many filters as you can. To broad of a search can blow up your phone especially while looking for cars.  Car dealerships use lots of keywords to make their "advertisments" pop up in many different search filters.
