@@ -97,7 +97,7 @@ while True:
 -----------
 
 *editors notes on Example 2:
- For the link that is pagesearch, Use as many filters as you can. To broad of a search can blow up your phone especially while looking for cars.  Car dealerships use lots of keywords to make their "advertisments" pop up in many different search filters.
+ For the link that is pagesearch, Use as many filters as you can. Too broad of a search can blow up your phone especially while looking for cars.  Car dealerships use lots of keywords to make their "advertisments" pop up in many different search filters.
 
 ## Planned Updates
 
