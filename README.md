@@ -8,7 +8,7 @@ you can pip install from this github page or download the crcrawler.py file dire
 
 ### Prerequisites
 
-Python 3: download at https://www.python.org/downloads/
+Python 3
 Beautifulsoup
 
 ```
