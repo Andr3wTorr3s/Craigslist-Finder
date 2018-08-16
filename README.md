@@ -19,12 +19,11 @@ pip install bs4
 
 
 
-### And coding style tests
+### Methods
 
-Explain what these tests test and why
 
 ```
-Give an example
+crcrawler.getposts(URL)
 ```
 
 ## Deployment
