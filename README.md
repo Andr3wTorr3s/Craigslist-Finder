@@ -47,9 +47,23 @@ Parameters: url link of craigslist post(string)
 Returns:(string) information about post in the form (price,title,description)
 
 
-## Deployment
+## Example Tutorial
 
-Add additional notes about how to deploy this on a live system
+Example1: printing information from craigslist search posts
+
+'''
+import clcrawler as cc
+
+searchpage="https//..." #whatever craigslist page you're interested in
+
+posts=cc.getposts(searchpage)
+
+for post in posts:
+       print(cc.getinfo(post))
+
+#this prints the price,title and description of each post on that page
+'''
+
 
 ## Built With
 
