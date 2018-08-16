@@ -47,14 +47,14 @@ Parameters: url link of craigslist post(string)
 Returns:(string) information about post in the form (price,title,description)
 
 
-## Example Tutorial
+## Example Tutorials
 
-Example1: printing information from craigslist search posts
+Example 1: printing information from craigslist search posts
 
 ```
 import clcrawler as cc
 
-searchpage="https//..." #whatever craigslist page you're interested in
+searchpage="https//craigslist....."       #whatever craigslist page you're interested in
 
 posts=cc.getposts(searchpage)
 
@@ -63,6 +63,31 @@ for post in posts:
 
 #this prints the price,title and description of each post on that page
 ```
+
+Example 2: sending updates to a phone (with twilio)
+```
+import clcrawler as cc
+import time
+
+searchpage="https//craigslist..."         #whatever craigslist page you're interested in
+posts=cc.getposts(searchpage)
+
+#make sure you have a way to exit the program, this is an infinite loop
+
+while True:
+       listings=[]
+       newposts=cc.getposts(searchpage)
+       for newpost in newposts:
+              if newpost not in posts:
+                     listings.append(newpost)
+       for list in listing:
+              message=cc.getinfo(list)
+              twilio.sendmessage(message,"33355432314")   #look above for the link about twilio documentation
+       posts=newposts
+       
+       time.sleep(1800)  #let the program sleep for 30 minutes so 30 minutes later it can check for new posts.  
+```
+
 
 
 ## Built With
