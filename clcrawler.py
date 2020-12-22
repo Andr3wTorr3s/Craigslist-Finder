@@ -6,6 +6,10 @@ from bs4 import BeautifulSoup
 import requests
 
 def getposts(link):
+    """
+    input : web link (string)
+    returns : posts (array) links of all posts on a cl page
+    """
     page = requests.get(link)
 
     #print(page.status_code)#if code is 200 page is ok if not page is bad
@@ -25,6 +29,10 @@ def getposts(link):
 
 
 def getinfo(link):
+    """
+    input : link (string)
+    returns : cost, title , description
+    """
     page = requests.get(link)
     print(page.status_code)
     soup = BeautifulSoup(page.content, 'html.parser')
